@@ -3,6 +3,17 @@ import React from "react";
 import Pegination from "./Pegination";
 
 function VehicleDetails() {
+
+    function sayHello() {
+        let b = "hello"
+        function greet() {
+            return b
+        }
+        return greet()
+    }
+    console.log(sayHello())
+
+
     return (
         <>
             <div className="flex flex-row justify-between gap-8">

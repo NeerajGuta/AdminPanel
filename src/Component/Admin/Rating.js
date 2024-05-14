@@ -5,12 +5,12 @@ import Pegination from "./Pegination";
 //     MagnifyingGlassIcon,
 // } from "@heroicons/react/24/outline";
 
-function UserProfile() {
+function Rating() {
   return (
     <>
       <div className="flex flex-row justify-between gap-8">
         <div className="text-lg py-3 font-bold">
-          <h3>User Profile</h3>
+          <h3>Driver Rating</h3>
         </div>
         <div className="w-full md:w-72">
           <Input
@@ -26,22 +26,25 @@ function UserProfile() {
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th scope="col" className="px-7 py-3 bg-green-600 text-white">
-                S.No.
-              </th>
-              <th scope="col" className="px-7 py-3 bg-green-600 text-white">
-                ID
+                S.No
               </th>
               <th scope="col" className="px-6 py-3 bg-green-600 text-white">
                 User Name
               </th>
               <th scope="col" className="px-6 py-3 bg-green-600 text-white">
-                Mobile Number
+                User Email
               </th>
               <th scope="col" className="px-6 py-3 bg-green-600 text-white">
-                Email
+                Driver Name
               </th>
               <th scope="col" className="px-6 py-3 bg-green-600 text-white">
-                Image
+                Driver Email
+              </th>
+              <th scope="col" className="px-6 py-3 bg-green-600 text-white">
+                Rating
+              </th>
+              <th scope="col" className="px-6 py-3 bg-green-600 text-white">
+                Reviews
               </th>
               <th scope="col" className="px-6 py-3 bg-green-600 text-white">
                 Register Date
@@ -56,8 +59,9 @@ function UserProfile() {
               >
                 1
               </th>
-              <td className="px-6 py-4">Red</td>
+              <td className="px-6 py-4">1</td>
               <td className="px-6 py-4">Wearables</td>
+              <td className="px-6 py-4">$999</td>
               <td className="px-6 py-4">$999</td>
               <td className="px-6 py-4">Wearables</td>
               <td className="px-6 py-4">$999</td>
@@ -71,4 +75,4 @@ function UserProfile() {
   );
 }
 
-export default UserProfile;
+export default Rating;

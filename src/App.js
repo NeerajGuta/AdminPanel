@@ -13,6 +13,10 @@ import DriverWallet from "./Component/Admin/DriverWallet";
 import Dashboard from "./Component/Admin/Dashboard";
 import BookingHistory from "./Component/Admin/BookingHistory";
 import GST from "./Component/Admin/GST";
+import UserNotification from "./Component/Admin/UserNotification";
+import DriverNotification from "./Component/Admin/DriverNotification";
+import SingalDriver from "./Component/Admin/SingalDriver";
+import Rating from "./Component/Admin/Rating";
 
 function App() {
   return (
@@ -61,6 +65,19 @@ function App() {
             element={<Leftbar children={<BookingHistory />} />}
           />
           <Route path="/tax" element={<Leftbar children={<GST />} />} />
+          <Route
+            path="/usernotification"
+            element={<Leftbar children={<UserNotification />} />}
+          />
+          <Route
+            path="/drivernotification"
+            element={<Leftbar children={<DriverNotification />} />}
+          />
+          <Route
+            path="/driverprofile/:id"
+            element={<Leftbar children={<SingalDriver />} />}
+          />
+          <Route path="/reviews" element={<Leftbar children={<Rating />} />} />
         </Routes>
       </BrowserRouter>
     </div>
